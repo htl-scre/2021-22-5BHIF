@@ -1,8 +1,6 @@
 package wordProcessor;
 
-public class Dictionary {
+public interface Dictionary {
 
-    public boolean contains(String content) {
-        return true;
-    }
+    boolean contains(String content);
 }

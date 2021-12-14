@@ -1,12 +1,6 @@
 package wordProcessor;
 
-public class SpellChecker {
+public interface SpellChecker {
 
-    private Dictionary dictionary;
-
-    public void check(String content) {
-        if (!dictionary.contains(content)) {
-            throw new IllegalArgumentException("Spelling wrong");
-        }
-    }
+    void check(String content);
 }
